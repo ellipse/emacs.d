@@ -3,7 +3,10 @@
 
 (add-to-list 'load-path "~/.emacs.d/ellipse/")
 
-;mit-scheme
+;; install personal packages
+(require 'init-local-pkg)
+
+;;mit-scheme
 (load-library "xscheme")
 ;(setq scheme-program-name "scm")
 
@@ -36,6 +39,7 @@
   (interactive)
   (c-mode)
   (which-function-mode)
+  (autopair-mode)
   (c-set-style "K&R")
   (setq tab-width 8)
   (setq indent-tabs-mode t)
