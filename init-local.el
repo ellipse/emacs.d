@@ -4,6 +4,7 @@
 (add-to-list 'load-path "~/.emacs.d/ellipse/")
 
 (global-set-key [(C-f6)] 'eshell)
+(global-set-key (kbd "C-c r") 'replace-string)
 
 ;mit-scheme
 (load-library "xscheme")
