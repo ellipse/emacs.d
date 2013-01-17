@@ -89,4 +89,8 @@
 ;; tabbar
 (require 'init-tabbar)
 
+;; clang
+(require 'init-clang)
+(ac-set-trigger-key "TAB")
+
 (provide 'init-local)
