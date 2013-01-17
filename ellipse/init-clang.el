@@ -5,6 +5,9 @@
   (setq clang-include-dir-str
         "
 /usr/include
+/usr/include/linux
+/usr/include/c++/4.7
+/usr/include/c++/4.7.2
 /usr/include/apue
 /usr/include/x86_64-linux-gnu
 /usr/include/net
