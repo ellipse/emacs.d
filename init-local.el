@@ -3,9 +3,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/ellipse/")
 
-(global-set-key [(C-f6)] 'eshell)
-(global-set-key (kbd "C-c r") 'replace-string)
-
 ;mit-scheme
 (load-library "xscheme")
 ;(setq scheme-program-name "scm")
@@ -50,9 +47,6 @@
 (require 'linum)
 (global-linum-mode 1)
 
-; indent automatically after newline
-(global-set-key "\r" 'align-newline-and-indent)
-
 ; load yasnippet
 (require 'init-yasnippet)
 
@@ -93,5 +87,9 @@
 ;; clang
 (require 'init-clang)
 (ac-set-trigger-key "TAB")
+
+;; personal key bindings
+(require 'init-key-bindings)
+
 
 (provide 'init-local)
