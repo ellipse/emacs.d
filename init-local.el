@@ -95,5 +95,8 @@
 ;; personal key bindings
 (require 'init-key-bindings)
 
+;; personal little funcitons
+(require 'init-local-defuns)
+
 
 (provide 'init-local)
