@@ -6,6 +6,9 @@
 ;; install personal packages
 (require 'init-local-pkg)
 
+;; personal colortheme
+(require 'color-theme-blackboard)
+
 ;;mit-scheme
 (load-library "xscheme")
 ;(setq scheme-program-name "scm")
@@ -47,14 +50,14 @@
   )
 (add-to-list 'auto-mode-alist '("\\.c\\'" . linux-c-mode))
 
-; display line number on the left side
+;; display line number on the left side
 (require 'linum)
 (global-linum-mode 1)
 
-; load yasnippet
+;; load yasnippet
 (require 'init-yasnippet)
 
-; enable hs-minor-mode for c/c++/elisp/scheme mode
+;; enable hs-minor-mode for c/c++/elisp/scheme mode
 (defun my-hs-minor-mode-hook ()
   (local-set-key (kbd "C-c t") 'hs-toggle-hiding)
   (local-set-key (kbd "C-c b") 'hs-hide-block)
@@ -67,14 +70,14 @@
 (add-hook 'scheme-mode-hook 'hs-minor-mode)
 (add-hook 'hs-minor-mode-hook 'my-hs-minor-mode-hook)
 
-; gas-mode to write assembly language
+;; gas-mode to write assembly language
 (require 'gas-mode)
 (add-to-list 'auto-mode-alist '("\\.S\\'" . gas-mode))
 
 ;multi-gud
 (require 'init-multigud)
 
-; undo-tree-mode
+;; undo-tree-mode
 (autoload 'undo-tree-visualize "~/.emacs.d/elpa/undo-tree-20121020.1844/undo-tree.el" "" nil)
 (global-set-key "\C-xu" 'undo-tree-visualize)
 (global-undo-tree-mode t)
