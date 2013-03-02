@@ -11,6 +11,7 @@
 
 ;;mit-scheme
 (load-library "xscheme")
+(add-hook 'scheme-mode-hook 'autopair-mode)
 ;(setq scheme-program-name "scm")
 
 ; change mouse's scroll step
