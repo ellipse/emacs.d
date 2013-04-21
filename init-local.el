@@ -8,11 +8,16 @@
 
 ;; personal colortheme
 (require 'color-theme-blackboard)
+(color-theme-blackboard)
+
+;; autopair-mode
+(autopair-global-mode)
 
 ;;mit-scheme
-(load-library "xscheme")
-(add-hook 'scheme-mode-hook 'autopair-mode)
-;(setq scheme-program-name "scm")
+(require 'init-mit-scheme)
+
+;; sml-mode
+(require 'init-sml-mode)
 
 ; change mouse's scroll step
 (setq scroll-step 1
