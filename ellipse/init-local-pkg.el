@@ -15,5 +15,7 @@
 (require-package 'undo-tree)
 (require-package 'yasnippet)
 (require-package 'autopair)
+(require-package 'sml-mode)
+(require-package 'sml-modeline-mode)
 
 (provide 'init-local-pkg)
