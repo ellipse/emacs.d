@@ -88,6 +88,9 @@
 (global-set-key "\C-xu" 'undo-tree-visualize)
 (global-undo-tree-mode t)
 
+;; outline-minor-mode
+(require 'init-outlminor-mode)
+
 ;; auctex
 (require 'init-auctex)
 
@@ -107,5 +110,7 @@
 ;; personal little funcitons
 (require 'init-local-defuns)
 
+;; statistics (ess && R)
+(require 'init-ess-r)
 
 (provide 'init-local)
