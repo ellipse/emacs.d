@@ -113,4 +113,7 @@
 ;; statistics (ess && R)
 (require 'init-ess-r)
 
+;; mail
+(require 'init-mail)
+
 (provide 'init-local)
