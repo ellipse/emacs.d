@@ -1,0 +1,52 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Gnus for gmail
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; (set-default-font "Bitstream Vera Sans Mono-16")
+;; (set-fontset-font (frame-parameter nil 'font)
+;;                  'unicode '("AR PL KaitiM GB" . "unicode-bmp")) ;To use this font, aptitude isnatll ttf-arphic-gkai00mp
+
+(setq user-full-name "username")
+(setq user-mail-address "mailaddress")
+
+
+;; IMAP - To use Gmail's IMAP access: Sign in to your account, Settings --> Forwarding and POP/IMAP --> Enable IMAP
+(setq gnus-select-method
+      '(nnimap "imap.gmail.com"
+                (nnimap-address "imap.gmail.com")
+                (nnimap-server-port 993)
+                (nnimap-stream ssl)
+                (nnir-search-engine imap)))
+(setq nnimap-split-inbox '("INBOX"))
+(setq nnimap-split-rule 'nnmail-split-fancy)
+(setq gnus-parameters
+      '(("nnimap+imap.gmail.com.*" (gcc-self . t))))
+(setq gnus-fetch-old-headers t)
+
+;; SMTP
+
+;; using gnutls instead of starttls
+(setq starttls-use-gnutls t
+      starttls-gnutls-program "gnutls-cli"
+      starttls-extra-arguments nil)
+
+(setq message-send-mail-function 'smtpmail-send-it
+      smtpmail-smtp-server "smtp.gmail.com"
+      smtpmail-default-smtp-server "smtp.gmail.com"
+      smtpmail-smtp-service 587
+      smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))
+      smtpmail-auth-credentials '(("smtp.gmail.com"
+                                   587
+                                   "mailaddress"
+                                   nil)))
+
+
+;; using a non-graphical password prompt for gpg
+(setenv "GPG_AGENT_INFO" nil)
+
+;; posting
+(setq gnus-posting-styles
+      '((".*"
+         (signature "Name")
+         (address "Address")
+         (organization "Company"))))
