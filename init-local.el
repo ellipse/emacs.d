@@ -7,8 +7,10 @@
 (require 'init-local-pkg)
 
 ;; personal colortheme
+(require 'my-theme)
 (require 'color-theme-blackboard)
 (color-theme-blackboard)
+; (mytheme)
 
 ;; autopair-mode
 (autopair-global-mode)
