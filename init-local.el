@@ -118,4 +118,7 @@
 ;; mail
 (require 'init-mail)
 
+;; html setting
+(require 'init-html)
+
 (provide 'init-local)
