@@ -21,7 +21,12 @@
 ;; sml-mode
 (require 'init-sml-mode)
 
-; change mouse's scroll step
+;; slime for sbcl
+(add-to-list 'load-path "/home/ellipse/.emacs.d/site-lisp/slime")
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(require 'slime-autoloads)
+
+;; change mouse's scroll step
 (setq scroll-step 1
         scroll-margin 3
         scroll-conservatively 10000)
@@ -120,5 +125,8 @@
 
 ;; html setting
 (require 'init-html)
+
+;; my python configuration
+;; (require 'init-my-python)
 
 (provide 'init-local)
