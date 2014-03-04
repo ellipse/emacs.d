@@ -1,6 +1,7 @@
-(load "auctex.el" nil t t)
-(load "preview-latex.el" nil t t)
+;; (load "auctex.el" nil t t)
+;; (load "preview-latex.el" nil t t)
 
+(require 'auctex-autoloads)
 (mapc (lambda (mode)
       (add-hook 'LaTeX-mode-hook mode))
       (list ;; 'auto-fill-mode
@@ -33,6 +34,7 @@
               ("[tabular]" ("tabular"))
               ("[frame]" ("frame"))
               ("[array]" ("array"))
+              ("[code]" ("lstlisting"))
 ;;              ("[eqnarray]" ("eqnarray"))
               )))
 
@@ -41,6 +43,6 @@
 ;; make the toc displayed on the left
 (setq reftex-toc-split-windows-horizontally t)
 ;; adjust the fraction
-(setq reftex-toc-split-windows-fraction 0.2)
+(setq reftex-toc-split-windows-fraction 0.3)
 
 (provide 'init-auctex)

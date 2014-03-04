@@ -3062,8 +3062,8 @@ Put in buffer and place breakpoint icon."
     (if (search-forward "Located in " nil t)
 	(if (looking-at "\\S-+")
 	  (with-current-buffer gud-comint-buffer
-	    (delete (cons bptno "File not found") gdb-location-alist)
-	    (push (cons bptno (match-string 0)) gdb-location-alist)))
+              (delete (cons bptno "File not found") gdb-location-alist)
+              (push (cons bptno (match-string 0)) gdb-location-alist)))
       (gdb-resync)
       (unless (assoc bptno (gdb-get gdb-location-alist))
 	(gdb-push (cons bptno "File not found") gdb-location-alist)

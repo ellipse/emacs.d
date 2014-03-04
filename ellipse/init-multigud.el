@@ -1,5 +1,5 @@
 (setq gdb-many-windows t)
-(load-library "multi-gud.el")
+(load-library "multi-gud.elc")
 (load-library "multi-gdb-ui.el")
 (setq gdb-use-separate-io 1)
 

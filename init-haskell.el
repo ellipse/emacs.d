@@ -1,4 +1,4 @@
-(load-library "haskell-site-file")
+(load-library "haskell-mode-autoloads")
 
 (setq haskell-font-lock-symbols t)
 

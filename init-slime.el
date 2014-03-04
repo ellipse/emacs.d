@@ -8,7 +8,7 @@
 
 (eval-after-load 'slime
   '(progn
-     (add-to-list 'load-path (concat (directory-of-library "slime") "/contrib"))
+     (add-to-list 'load-path (concat (directory-of-library "slime") "contrib"))
      (setq slime-protocol-version 'ignore)
      (setq slime-net-coding-system 'utf-8-unix)
      (add-hook 'slime-repl-mode-hook 'sanityinc/lisp-setup)

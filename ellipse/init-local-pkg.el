@@ -16,6 +16,7 @@
 (require-package 'yasnippet)
 (require-package 'autopair)
 (require-package 'sml-mode)
-(require-package 'sml-modeline-mode)
+;(require-package 'sml-modeline-mode)
+;(require-package 'ess)
 
 (provide 'init-local-pkg)

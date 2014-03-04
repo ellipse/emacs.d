@@ -1,0 +1,54 @@
+cd .emacs.d/
+ls
+git add init-local.el 
+git commit -m 'some new key bindings'
+git push origin private
+cd ellipse/
+git add readme 
+git commit -m 'readme'
+git push origin private
+mv readme readme.md
+git add readme.md 
+git push origin private
+git add readme.md 
+git commit -m 'readme'
+git push origin private
+git add init-key-bindings.el 
+git commit -m 'personal key bindings'
+git push origin private
+cd ..
+git add init-local.el 
+git commit -m 'move key bindings to a individual file'
+git push origin private
+ls
+cd
+ls
+cd .emacs.d/
+ls
+git add init-local.el 
+git commit -m 'add a function to automatically download and install personal packages'
+git push origin private
+cd ellipse/
+ls
+git add init-clang.el
+git commit -m 'add some path for auto-complete-clang'
+git add init-local-pkg.el 
+git commit -m 'automatically download and install personal packages'
+git push origin private
+ls
+git add init-local.el 
+git commit -m 'include local defuns'
+git push -u
+python code2-3.py 
+python code2-3.py 
+python code2-3.py 
+python code2-3.py 
+python code2-3.py 
+python code2-3.py 
+python code2-3.py 
+python code2-3.py 
+exit
+ls
+mv LinuxKernel-Mem LinuxKernel-Mem.org
+ping 8.8.8.8
+uniq --help

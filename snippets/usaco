@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: usaco template
+# key: usaco
+# --
+/*
+  ID:xdgxygp1
+  LANG:C++
+  PROG:${1:name}
+ */
+
+#include <cstdio>
+#define DEBUG
+
+int main(void)
+{
+  FILE *fpin, *fpout;
+#ifdef DEBUG
+  fpin = stdin;
+  fpout = stdout;
+#else
+  fpin = fopen("$1.in", "r");
+  fpout = fopen("$1.out", "w");
+#endif
+
+  $2
+
+  fclose(fpin);
+  fclose(fpout);
+  return 0;
+}
