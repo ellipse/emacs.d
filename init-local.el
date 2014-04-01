@@ -22,7 +22,7 @@
 (require 'init-sml-mode)
 
 ;; slime for sbcl
-(add-to-list 'load-path "/home/ellipse/.emacs.d/site-lisp/slime")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/slime")
 (setq inferior-lisp-program "/usr/bin/sbcl")
 (require 'slime-autoloads)
 
@@ -43,7 +43,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ; set matlab-mode
-(add-to-list 'load-path "/home/ellipse/.emacs.d/ellipse/matlab")
+(add-to-list 'load-path "~/.emacs.d/ellipse/matlab")
 (require 'matlab-load)
 
 ; set tab's width to be 4
@@ -91,7 +91,7 @@
 (require 'init-multigud)
 
 ;; undo-tree-mode
-(autoload 'undo-tree-visualize "~/.emacs.d/elpa/undo-tree-20121020.1844/undo-tree.el" "" nil)
+(require 'undo-tree-autoloads)
 (global-set-key "\C-xu" 'undo-tree-visualize)
 (global-undo-tree-mode t)
 
@@ -102,7 +102,7 @@
 (require 'init-auctex)
 
 ;; switch-window
-(require 'switch-window)
+(require 'init-switch-window)
 
 ;; tabbar
 (require 'init-tabbar)
