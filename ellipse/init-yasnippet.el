@@ -17,7 +17,8 @@
 ;;              ad-do-it))
 (setq yas/root-directory
       '("~/.emacs.d/snippets" ;; 自己的snippets
-        "~/.emacs.d/elpa/yasnippet-20140303.53/snippets"))
+        "~/.emacs.d/elpa/yasnippet-20140314.255/snippets/"))
+
 (yas/jit-load)
 (yas/global-mode 1)
 (provide 'init-yasnippet)
