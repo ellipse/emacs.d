@@ -84,11 +84,11 @@
 (add-hook 'hs-minor-mode-hook 'my-hs-minor-mode-hook)
 
 ;; gas-mode to write assembly language
-(require 'gas-mode)
-(add-to-list 'auto-mode-alist '("\\.S\\'" . gas-mode))
+;(require 'gas-mode)
+;(add-to-list 'auto-mode-alist '("\\.S\\'" . gas-mode))
 
 ;multi-gud
-(require 'init-multigud)
+;(require 'init-multigud)
 
 ;; undo-tree-mode
 (require 'undo-tree-autoloads)
