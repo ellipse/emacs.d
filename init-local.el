@@ -32,6 +32,7 @@
         scroll-conservatively 10000)
 
 ;set user profile
+;(setq user-full-name "Kuo Hsiang-yü")
 (setq user-full-name "ellipse")
 (setq user-mail-address "xdgxygpl@gmail.com")
 
